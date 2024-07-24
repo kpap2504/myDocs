@@ -1,5 +1,7 @@
 https://www.sitepoint.com/theming-tailwind-css-variables-clean-architecture/
 
+https://keegan.codes/blog/generating-css-variables-from-a-custom-tailwind-theme
+
 
 # Project Setup
 We start by creating a React application using Vite, and adding TypeScript. You can choose to use Create React App if you prefer. We install Tailwind CSS for styling and theming.
