@@ -37,5 +37,28 @@ https://dev.to/antdp425/react-fetch-data-from-api-with-useeffect-27le
 https://alexkondov.com/an-ode-to-effects/
 
 
+05/08/2024
+https://dev.to/srijan_karki/the-proper-use-of-useeffect-in-react-a-comprehensive-guide-1edi
+```js
+// Fetching Data on Component Mount
+ useEffect(() => {
+     const fetchData = async () => {
+       const result = await fetch('https://api.example.com/data');
+       const data = await result.json();
+       setData(data);
+     };
+     fetchData();
+   }, []); // Empty dependency array ensures this runs only once on mount
+```   
 
+```js   
+// Setting Up Intervals or Subscriptions   
+ useEffect(() => {
+     const intervalId = setInterval(() => {
+       console.log('Interval running');
+     }, 1000);
+     return () => clearInterval(intervalId); // Cleanup on unmount
+   }, []);   
+```   
+   
 
